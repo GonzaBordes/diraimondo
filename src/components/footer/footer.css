@@ -1,0 +1,99 @@
+
+
+footer .container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-block: 4rem;
+    overflow: visible;
+}
+
+
+footer .svg-box{
+    width: 15rem;
+    order: 1;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+
+}
+
+footer a{
+    color: white;
+}
+
+footer .container > span:nth-child(1),
+footer .container > a{
+    font-size: 1.4rem;
+}
+
+footer .container > span:nth-child(1){
+    order: 2;
+    margin-top: 1rem;
+}
+
+
+footer .container > a{
+    order: 3;
+    transition: .5s;
+    cursor: pointer;
+    transform-origin: left;
+}
+
+footer .container > a > span{
+    display: flex;
+    align-items: center;
+
+}
+
+footer .container > a > span img{
+    width: 1.8rem;
+    margin-right: .2rem;
+}
+
+ .footer-svg .svg-elem-1 {
+    stroke-dashoffset: 2841.05615234375px;
+    stroke-dasharray: 2841.05615234375px;
+    -webkit-transition: stroke-dashoffset 4s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+            transition: stroke-dashoffset 4s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  }
+  
+  .footer-svg.active .svg-elem-1 {
+    stroke-dashoffset: 0;
+  }
+
+  footer .container a{
+    margin-block: 1rem;
+  }
+
+
+ 
+
+  footer .container > a > span img{
+    margin-right: .6rem;
+}
+
+@media (min-width: 768px){
+    footer .svg-box{
+        width: 50vw;
+        position: absolute;
+        right: 1.5rem;
+        top: -1rem;
+    }
+
+    footer .container > span:nth-child(1),
+    footer .container > a{
+    font-size: 5vw;
+    }
+
+    footer .container > span:nth-child(1){
+        font-size: 6vw;
+    }
+
+    footer .container > a > span img{
+        width: 6vw;
+        margin-right: 1.5rem;
+    }
+}

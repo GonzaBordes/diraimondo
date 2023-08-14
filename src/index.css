@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink: #ED6BB5;
+    --yellow: #F4E65C;
+    --red: #E94550;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #000000;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #ED6BB5;
+}
+
+/* Custom Fonts */
+@font-face {
+    font-family: 'monument';
+    src: url(./assets/fonts/MonumentExtended-Regular.woff2);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'monument';
+    src: url(./assets/fonts/MonumentExtended-Ultrabold.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'noyth';
+    src: url(./assets/fonts/Noyh-Heavy.woff2);
+}
+
+@media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+    .marquee img{
+      height: 400px;
+    }
+    
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }

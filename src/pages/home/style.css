@@ -1,0 +1,530 @@
+/* HOME hero section */
+
+#home_hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home_hero h1{
+    color: white;
+}
+
+#home_hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-grid picture{
+    height: 100%;
+}
+
+/* Personalidades */
+
+#personalidades h2{
+    color: var(--yellow);
+    font-size: 6.5vw;
+}
+
+
+#personalidades .heading_word{
+    font-size: 13vw;
+    color: var(--pink);
+}
+
+#personalidades .heading_word img{
+    width: 2.6rem;
+    margin-right: 1rem;
+}
+
+#personalidades .container{
+    position: relative;
+    overflow: visible;
+}
+
+#personalidades .circle-logo{
+    position: absolute;
+    bottom: -4rem;
+    display: block;
+    right: -4rem;
+    width: 12rem;
+    animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.heading_word.asterisc{
+    display: flex;
+    align-items: center;
+}
+
+#personalidades li{
+    overflow: hidden;
+}
+
+/* Servicios Section */
+
+#servicios .servicios_heading > *{
+    font-size: 9.5vw;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#servicios h2{
+    color: var(--red);
+}
+
+.servicios_heading span{
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px var(--pink);
+}
+
+#servicios li{
+    overflow: hidden;
+    transition: .4s;
+}
+
+#servicios li a:hover{
+    text-decoration: underline;
+}
+
+#servicios li a{
+    font-size: 8.4vw;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: block;
+    width: fit-content;
+}
+
+#servicios ul{
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Clientes section */
+
+#clientes h2{
+    color: var(--yellow);
+}
+
+#clientes h2 span{
+    color: var(--yellow);
+}
+
+#clientes ul{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+#clientes img{
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Map section */
+
+#map h2{
+    color: var(--pink);
+    display: flex;
+    white-space: pre-wrap;
+    margin-bottom: 2.5rem;
+}
+
+#map h2 span{
+    color: var(--pink);
+}
+
+.map_wrapper{
+    position: relative;
+}
+
+.mapa_amarillo{
+    transition: .3s;
+}
+
+.pais{
+    transition: .3s;
+    position: absolute;
+    display: flex;
+}
+
+.pais:hover{
+    transform: scale(1.3);
+   
+}
+
+.pais.argentina{
+    bottom: 2.1%;
+    width: 4.97%;
+    left: 23.85%;
+}
+
+.pais.españa{
+    bottom: 69%;
+    width: 3.5%;
+    left: 43.2%;
+}
+
+.pais.usa{
+    bottom: 60.2%;
+    width: 18%;
+    left: 8.62%;
+}
+.pais.usa .tooltip{
+    left: 40%;
+}
+
+.pais.mexico{
+    bottom: 52.3%;
+    width: 8.6%;
+    left: 9.5%;
+}
+
+.tooltip{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.tooltip span{
+    transform: translateY(100%);
+    transition: .2s .2s;
+    display: block;
+    font-size: .8rem;
+    color: white;
+}
+
+.pais:hover .tooltip span{
+    transform: translateY(0);
+}
+
+.opacidad{
+    opacity: .4;
+}
+
+.usa-path{
+    fill:#ca679f;stroke:#ca679f;stroke-miterlimit:10;
+}
+
+.usa-svg .svg-elem-1 {
+stroke-dashoffset: 656.0147094726562px;
+stroke-dasharray: 656.0147094726562px;
+fill: transparent;
+-webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}  
+
+.usa-svg.active .svg-elem-1 {
+stroke-dashoffset: 0;
+fill: rgb(202, 103, 159);
+}
+
+.argentina-path{fill:#ca679f;stroke:#ca679f;stroke-miterlimit:10;}
+
+.argentina-svg .svg-elem-1 {
+    stroke-dashoffset: 322.0830383300781px;
+    stroke-dasharray: 322.0830383300781px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+  
+.argentina-svg.active .svg-elem-1 {
+stroke-dashoffset: 0;
+fill: rgb(202, 103, 159);
+}
+
+.mexico-path{
+    fill:#ca679f;stroke:#ca679f;stroke-miterlimit:10;
+}
+
+.mexico-svg .svg-elem-1 {
+    stroke-dashoffset: 348.1279602050781px;
+    stroke-dasharray: 348.1279602050781px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+
+.mexico-svg.active .svg-elem-1 {stroke-dashoffset: 0;fill: rgb(202, 103, 159);}
+
+.espana-path{fill:#ca679f;stroke:#ca679f;stroke-miterlimit:10;}
+
+.espana-svg .svg-elem-1 {
+    stroke-dashoffset: 115.73834991455078px;
+    stroke-dasharray: 115.73834991455078px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+
+.espana-svg.active .svg-elem-1 {
+    stroke-dashoffset: 0;
+    fill: rgb(202, 103, 159);
+} 
+
+/* Medios Section */
+
+#medios h2, .medios_heading_wrapper span{
+    font-size: 10vw;
+    width: 250%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--yellow);
+}
+
+#medios p{
+    color: white;
+}
+
+.medios_heading_wrapper span{
+    color: white;
+}
+
+#medios .las-rosas{
+    background-color: #CCD744;
+}
+
+#medios .forbes{
+    background-color: var(--pink);
+    z-index: 9;
+    position: relative;
+    transition: 1s;
+    right: calc(-100% + 3rem);
+}
+
+#medios .forbes.active{
+    right: calc(-3rem);
+}
+
+#medios article p{
+    padding-right: 3.5rem;
+}
+
+.forbes a{
+    align-self: end;
+}
+
+#medios article{
+    display: flex;
+    padding-bottom: 1rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#medios article picture img{
+    width: 2rem;
+}
+
+
+#medios .article_content{
+    order: 2;
+    display: grid;
+    gap: 1rem;
+}
+
+#medios .article_content > img{
+    order: 1;
+}
+
+#medios .article_content > p{
+    order: 2;
+}
+
+#medios .article_content > a{
+    order: 3;
+}
+
+#medios p{
+    font-family: 'noyth';
+    font-size: 1.3rem;
+}
+
+#medios .medios_articles{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+#medios picture{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding-inline: .5rem;
+}
+
+.las-rosas picture{
+    transform: translateY(.6rem);
+}
+
+.las-rosas a{
+    color: #CCD744;
+}
+
+.forbes a{
+    color: var(--pink);
+}
+
+#medios article a{
+    padding: .5rem .7rem;
+    background-color: white;
+    width: fit-content;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    font-family: 'noyth';
+    text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+
+    #personalidades .heading_word{
+        font-size: 10vw;
+    }
+
+    #personalidades .heading_word img{
+        width: 6vw;
+    }
+
+    .heading_word.asterisc{
+        margin-left: 7%;
+    }
+
+    #personalidades ul{
+        grid-template-columns: 1fr 10rem 1fr;
+        grid-template-rows: 1fr 10rem 1fr;
+        gap: .5rem;
+    }
+
+    #personalidades li:nth-of-type(1){
+        grid-row: 1/3;
+    }
+    #personalidades li:nth-of-type(2){
+        grid-column: 2/4;
+        display: flex;
+    }
+    #personalidades li:nth-of-type(3){
+        grid-column: 1/3;
+    }
+    #personalidades li:nth-of-type(4){
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    #personalidades img{
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #servicios li{
+        display: flex;
+        justify-content: end;
+    }
+
+    #clientes ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 768px) {
+
+    #personalidades .circle-logo{
+        width: 20rem;
+        bottom: -9rem;
+    }
+
+    #servicios .servicios_heading > *{
+        font-size: 8vw;
+    }
+
+    #servicios ul li a{
+        font-size: 4.3vw;
+    }   
+
+  }
+  
+  @media (min-width: 1024px) {
+
+    #clientes img{
+        height: 60px;
+        object-fit: contain;
+    }
+
+    #personalidades .heading_word{
+        font-size: 8vw;
+    }
+
+    #personalidades h2{
+        font-size: 5.5vw;
+    }
+
+    #medios article{
+        grid-column: auto;
+        grid-row: auto;
+        right: auto;
+    }
+
+    #medios .forbes{
+        right: auto;
+    }
+
+    #medios .forbes.active{
+        right: auto;
+    }
+
+    #medios .las-rosas{
+        transform: translateX(100%);
+        right: 5.8rem;
+        position: relative;
+        transition: .5s;
+    }
+
+    #medios .las-rosas:hover{
+        transform: translateX(0);
+        right: -3px;
+    }
+
+    #medios article picture{
+        cursor: grab;
+    }
+
+    #medios article picture img{
+        width: 5rem;
+        padding-right: 2rem;
+    }
+
+    #medios .article_content p{
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    
+  }
+  
+  @media (min-width: 1536px) {
+    
+  }
